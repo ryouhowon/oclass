@@ -1,0 +1,70 @@
+/* pop_css */
+@charset "utf-8";
+#dark{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+}
+
+#dark.active{z-index: 100; opacity: 1; transition: opacity 0.7s;}
+
+#popup{
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    z-index: -1;
+    opacity: 0;
+    height: 440px;
+}
+
+#popup.active{z-index: 100; opacity: 1; transition: opacity 0.7s;}
+
+#popup .close{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+    cursor: pointer;
+}
+
+#popup .pop_cont{padding-bottom: 10px;}
+#popup .pop_cont img{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#popup .pop_cont h3{color: #21bda1; padding-bottom: 5px;}
+
+#popup .php_btn{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: right;
+}
+
+#popup .php_btn button{
+    padding: 6px 12px;
+    border: 1px solid #21bda1;
+    border-radius: 4px;
+    color: #21bda1;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#popup .php_btn button:hover{background-color: #21bda1; color: #fff;}

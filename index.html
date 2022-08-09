@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OClass - Main</title>
+    <link rel="shortcut icon" href="./img/OClass_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/pop.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <header>
+        <script src="https://kit.fontawesome.com/689a020470.js" crossorigin="anonymous"></script>
+
+
+
+
+<div id="top">
+    <div class="frame">
+        <div class="top_info">
+            <p><i class="fas fa-phone-square-alt"></i> Support: +82 2 322 4456</p>
+        </div>
+        <ul id="top_menu">
+
+                <li><a href="./member_form.php">회원가입</a></li>
+            <li><a href="./login_form.php">로그인</a></li>
+            </ul>
+    </div>
+</div>
+
+<nav>
+    <div class="frame">
+        <div class="logo">
+            <a href="./"><img src="./img/OClass_logo.png" alt=""></a>
+        </div>
+        <div id="menu_bar">
+            <ul>
+                <li><a href="./products_list.php">Class</a></li>
+
+                <li><a href="./message_form.php?">Meassge</a></li>
+                <li><a href="./board_list.php">Board</a></li>
+                <li><a href="./faq_list.php">FAQ</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>    </header>
+
+    <section>
+        <!-- main.php -->
+
+<div id="main_banner" class="mainpage">
+    <div class="main_img_cont">
+        <div id="slider">
+            <div class="slide">
+                <div class="slide_img" style="background-image: url(./products/2022_06_14_02_46_29.png);">
+                    <div class="wrap">
+                        <div class="txt_space">
+                            <h2>피아노 클래스</h2>
+                            <p>[4주]가격만 저렴하고 수업은 고퀄리티의 피아노</p>
+                            <a href="./products_view.php?num=8">Detail More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide_img" style="background-image: url(./products/2022_06_14_01_07_55.png);">
+                    <div class="wrap">
+                        <div class="txt_space">
+                            <h2>버스 투어</h2>
+                            <p>[춘천] 남이섬 + 아침고요수목원 + 쁘띠프랑스</p>
+                            <a href="./products_view.php?num=7">Detail More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide_img" style="background-image: url(./products/2022_06_14_12_54_13.png);">
+                    <div class="wrap">
+                        <div class="txt_space">
+                            <h2>작곡 클래스</h2>
+                            <p>[3주]SM 전속 작곡가가 알려주는 프로 작곡법</p>
+                            <a href="./products_view.php?num=6">Detail More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide_img" style="background-image: url(./products/2022_06_14_12_52_57.png);">
+                    <div class="wrap">
+                        <div class="txt_space">
+                            <h2>영어 클래스</h2>
+                            <p>영화 캐롤의 간결하고 임팩트 있는 대사로 배우는영어회화</p>
+                            <a href="./products_view.php?num=5">Detail More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 프로그램 인기순 -->
+<div id="fav_box" class="main_cont">
+    <div class="program">
+        <div class="left_part">
+            <h2>BEST 프로그램 <a href="./products_list.php?sort=favSort">＋</a></h2>
+            <p>고객이 선정한 인기 프로그램</p>
+            <ul>
+                <li><a class="prev" href=""></a></li>
+                <li><a class="next" href=""></a></li>
+            </ul>
+        </div>
+
+        <div class="rigth_part">
+            <ul class="products_list">
+
+                <li onclick="location.href='./products_view.php?num=4'">
+                    <div class="pd_img">
+                        <div class="pd_bg" style="background-image: url(./products/2022_06_14_12_52_12.png);"></div>
+                    </div>
+
+                    <div class="pd_cont">
+                        <h3 class="pd_title">사진 클래스</h3>
+                        <p class="pd_sub">일상을 동화처럼 표현하는 사진. 오직 아이폰으로만</p>
+
+                        <div class="pd_info">
+                            <div class="pd_price"><span>31,900</span>원</div>
+                            <div class="pd_fav">
+                                <img src="./img/fav_fill.svg" alt="">
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="location.href='./products_view.php?num=1'">
+                    <div class="pd_img">
+                        <div class="pd_bg" style="background-image: url(./products/2022_06_14_11_03_51.png);"></div>
+                    </div>
+
+                    <div class="pd_cont">
+                        <h3 class="pd_title">마카롱클래스</h3>
+                        <p class="pd_sub">오늘은 커피와 잘 어울리는 달다구리 마카롱 만들기</p>
+
+                        <div class="pd_info">
+                            <div class="pd_price"><span>28,000</span>원</div>
+                            <div class="pd_fav">
+                                <img src="./img/fav_fill.svg" alt="">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="location.href='./products_view.php?num=5'">
+                    <div class="pd_img">
+                        <div class="pd_bg" style="background-image: url(./products/2022_06_14_12_52_57.png);"></div>
+                    </div>
+
+                    <div class="pd_cont">
+                        <h3 class="pd_title">영어 클래스</h3>
+                        <p class="pd_sub">영화 캐롤의 간결하고 임팩트 있는 대사로 배우는영어회화</p>
+
+                        <div class="pd_info">
+                            <div class="pd_price"><span>41,000</span>원</div>
+                            <div class="pd_fav">
+                                <img src="./img/fav_fill.svg" alt="">
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="location.href='./products_view.php?num=2'">
+                    <div class="pd_img">
+                        <div class="pd_bg" style="background-image: url(./products/2022_06_14_12_50_39.png);"></div>
+                    </div>
+
+                    <div class="pd_cont">
+                        <h3 class="pd_title">뜨개질 클래스</h3>
+                        <p class="pd_sub">연인을 위한 장갑 목도리 세트 만들기</p>
+
+                        <div class="pd_info">
+                            <div class="pd_price"><span>32,000</span>원</div>
+                            <div class="pd_fav">
+                                <img src="./img/fav_fill.svg" alt="">
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="location.href='./products_view.php?num=3'">
+                    <div class="pd_img">
+                        <div class="pd_bg" style="background-image: url(./products/2022_06_14_12_51_23.png);"></div>
+                    </div>
+
+                    <div class="pd_cont">
+                        <h3 class="pd_title">드로잉 클래스</h3>
+                        <p class="pd_sub">[2주과정]연필하나만으로 모든 분위기를 담아내요</p>
+
+                        <div class="pd_info">
+                            <div class="pd_price"><span>14,900</span>원</div>
+                            <div class="pd_fav">
+                                <img src="./img/fav_fill.svg" alt="">
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="location.href='./products_view.php?num=6'">
+                    <div class="pd_img">
+                        <div class="pd_bg" style="background-image: url(./products/2022_06_14_12_54_13.png);"></div>
+                    </div>
+
+                    <div class="pd_cont">
+                        <h3 class="pd_title">작곡 클래스</h3>
+                        <p class="pd_sub">[3주]SM 전속 작곡가가 알려주는 프로 작곡법</p>
+
+                        <div class="pd_info">
+                            <div class="pd_price"><span>58,000</span>원</div>
+                            <div class="pd_fav">
+                                <img src="./img/fav_fill.svg" alt="">
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+    
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="mid_banner">
+    <div class="dark">
+        <div class="wrap">
+            <div class="cont">
+                <div class="top_part">
+                    <h3>이용방법</h3>
+                    <p>튜터와 수업에 대한 문의를 충분히 나누신 후, 예약 및 결제를 통해 클래스를 진행할 수 있습니다 자세한 방법은 하단의 바로가기를 클릭해 주시기 바랍니다</p>
+                </div>
+                <button>바로가기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 프로그램 최신순 -->
+<div id="new_box" class="main_cont2">
+    <div class="program">
+        <h2>Trend 프로그램 <a href="./products_list.php?sort=newSort">＋</a></h2>
+        <ul class="products_list">
+
+            <li onclick="location.href='./products_view.php?num=8'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_02_46_29.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">피아노 클래스</h3>
+                    <p class="pd_sub">[4주]가격만 저렴하고 수업은 고퀄리티의 피아노</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>320,000</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="location.href='./products_view.php?num=7'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_01_07_55.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">버스 투어</h3>
+                    <p class="pd_sub">[춘천] 남이섬 + 아침고요수목원 + 쁘띠프랑스</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>98,000</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="location.href='./products_view.php?num=6'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_12_54_13.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">작곡 클래스</h3>
+                    <p class="pd_sub">[3주]SM 전속 작곡가가 알려주는 프로 작곡법</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>58,000</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="location.href='./products_view.php?num=5'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_12_52_57.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">영어 클래스</h3>
+                    <p class="pd_sub">영화 캐롤의 간결하고 임팩트 있는 대사로 배우는영어회화</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>41,000</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="location.href='./products_view.php?num=4'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_12_52_12.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">사진 클래스</h3>
+                    <p class="pd_sub">일상을 동화처럼 표현하는 사진. 오직 아이폰으로만</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>31,900</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="location.href='./products_view.php?num=3'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_12_51_23.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">드로잉 클래스</h3>
+                    <p class="pd_sub">[2주과정]연필하나만으로 모든 분위기를 담아내요</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>14,900</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="location.href='./products_view.php?num=2'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_12_50_39.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">뜨개질 클래스</h3>
+                    <p class="pd_sub">연인을 위한 장갑 목도리 세트 만들기</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>32,000</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="location.href='./products_view.php?num=1'">
+                <div class="pd_img">
+                    <div class="pd_bg" style="background-image:url(./products/2022_06_14_11_03_51.png)"></div>
+                </div>
+
+                <div class="pd_cont">
+                    <h3 class="pd_title">마카롱클래스</h3>
+                    <p class="pd_sub">오늘은 커피와 잘 어울리는 달다구리 마카롱 만들기</p>
+
+                    <div class="pd_info">
+                        <div class="pd_price"><span>28,000</span>원</div>
+                        <div class="pd_fav">
+                            <img src="./img/fav_fill.svg" alt="">
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 리뷰 -->
+<div id="review">
+    <div class="dark">
+        <div class="wrap">
+            <div class="slider review_slider">
+                <div class="slide">
+                    <div class="review_txt">
+                        <span><img src="./img/start_quote.svg" alt=""></span>
+                        <p>마카롱 클래스</p>
+                        <span><img src="./img/end_quote.svg" alt=""></span>
+                    </div>
+
+                    <ul rel="4">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <h4>HM</h4>
+                    <div class="review_link">
+                        <a href="./products_view.php?num=1">[마카롱클래스]바로가기</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_txt">
+                        <span><img src="./img/start_quote.svg" alt=""></span>
+                        <p>마카롱 클래스</p>
+                        <span><img src="./img/end_quote.svg" alt=""></span>
+                    </div>
+
+                    <ul rel="4">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <h4>HM</h4>
+                    <div class="review_link">
+                        <a href="./products_view.php?num=1">[마카롱클래스]바로가기</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_txt">
+                        <span><img src="./img/start_quote.svg" alt=""></span>
+                        <p>ㄹㄹㄹㄹ</p>
+                        <span><img src="./img/end_quote.svg" alt=""></span>
+                    </div>
+
+                    <ul rel="4">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <h4></h4>
+                    <div class="review_link">
+                        <a href="./products_view.php?num=4">[사진 클래스]바로가기</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_txt">
+                        <span><img src="./img/start_quote.svg" alt=""></span>
+                        <p>ㅁㄴㄹㅇ</p>
+                        <span><img src="./img/end_quote.svg" alt=""></span>
+                    </div>
+
+                    <ul rel="4">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <h4></h4>
+                    <div class="review_link">
+                        <a href="./products_view.php?num=1">[마카롱클래스]바로가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 공지사항 & FAQ -->
+<div id="main_info">
+    <div class="wrap">
+        <div class="board">
+            <h2>공지사항 <a href="./board_list.php">＋</a></h2>
+            <ul>
+                <li>
+                    <span class="field1"><a href="./board_view.php?num=28&page=1">공지 수정 게시글 #1</a></span>
+                    <span class="field2">OClass</span>
+                    <span class="field3">2022-06-21</span>
+                </li>
+                <li>
+                    <span class="field1"><a href="./board_view.php?num=24&page=1">공지 게시글  #10</a></span>
+                    <span class="field2">OClass</span>
+                    <span class="field3">2022-06-20</span>
+                </li>
+                <li>
+                    <span class="field1"><a href="./board_view.php?num=21&page=1">공지 게시글 #7</a></span>
+                    <span class="field2">OClass</span>
+                    <span class="field3">2022-06-20</span>
+                </li>
+                <li>
+                    <span class="field1"><a href="./board_view.php?num=20&page=1">공지 게시글  #6</a></span>
+                    <span class="field2">OClass</span>
+                    <span class="field3">2022-06-20</span>
+                </li>
+                <li>
+                    <span class="field1"><a href="./board_view.php?num=19&page=1">공지게시글  #5</a></span>
+                    <span class="field2">OClass</span>
+                    <span class="field3">2022-06-20</span>
+                </li>
+            </ul>
+        </div>
+        <div class="faq">
+            <h2>FAQ <a href="./faq_list.php">＋</a></h2>
+            <ul>
+                <li>
+                    <span class="field1">Q</span>
+                    <span class="field2">수업 신청 후 절차가 어떻게 되나요?</span>
+                    <span class="field3">OClass</span>
+                </li>
+                <li>
+                    <span class="field1">Q</span>
+                    <span class="field2">수업료는 어떻게 결제하나요?</span>
+                    <span class="field3">OClass</span>
+                </li>
+                <li>
+                    <span class="field1">Q</span>
+                    <span class="field2">결제방식은 어떻게 되나요?</span>
+                    <span class="field3">OClass</span>
+                </li>
+                <li>
+                    <span class="field1">Q</span>
+                    <span class="field2">현금영수증 / 세금계산서는 어떻게 발급 받을 수 있나요?</span>
+                    <span class="field3">OClass</span>
+                </li>
+                <li>
+                    <span class="field1">Q</span>
+                    <span class="field2">수업장소와 시간은 어떻게 되나요?</span>
+                    <span class="field3">OClass</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>    </section>
+    
+    <footer>
+        <p>&copy; OClass Ldt.</p>    </footer>
+
+    <div id="dark" class="active"></div>
+    <div id="popup" class="active">
+        <div class="close">×</div>
+        <div class="pop_cont">
+            <img src="./img/OClass.jpg" alt="">
+        </div>
+        <div class="php_btn">
+            <button type="button" onclick="todayClosePop();">24시간 동안 열리지 않기</button>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="./js/pop.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
